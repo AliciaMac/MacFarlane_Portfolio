@@ -4,8 +4,8 @@ var close = document.querySelector('.close')
 
 
 
-function lightboxOpen(){
+//function lightboxOpen(){
   lightbox.classList.remove("hidden");
 }
 
-button.addEventListener('click', lightboxOpen, false);
+//button.addEventListener('click', lightboxOpen, false);

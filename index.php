@@ -72,13 +72,7 @@ $sendMail = submitMessage($name, $email, $message, $direct);
 		<img src="images/Nail_Polish_2.png"  alt="mascara animation" class="nailPolish2">
 		<img src="images/Nail_Polish_3.png"  alt="mascara and nail polish" class="nailPolish3">
 	</div>
-	<div class="lightbox hidden">
-		<div class="close">
-	<img src="images/Nail_polish_big1.png"  alt="nail polish animation " class="bigImage">
-	<img src="images/Nail_polish_big2.png"  alt="nail polish animation " class="bigImage">
-	<img src="images/Nail_polish_big3.png"  alt="nail polish animation " class="bigImage">
-</div>
-	</div>
+
 
 	<img src="images/readinggirl.svg" width="300px" height="300px" class="readinggirl" alt="">
 	<h1 class="readingText">Learning to code was a process,<br>
