@@ -1,8 +1,28 @@
+<?php
+
+
+require_once("admin/scripts/load.php");
+if(isset($_POST['submit'])){
+$name = $_POST['name'];
+$email = $_POST['email'];
+$message = $_POST['message'];
+$street = $_POST['street'];
+$direct = "Thankyou.php";
+
+if($street ==="") {
+$sendMail = submitMessage($name, $email, $message, $direct);
+//echo "street is empty";
+}
+}
+
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Tester</title>
+	<meta name="viewport" content="width=device-width" />
+	<title>Alicia's Portfolio</title>
 	<link rel="stylesheet" href="css/main3.css">
 	<link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Neucha" rel="stylesheet">
@@ -48,11 +68,17 @@
 
 
 	<div="ThreeD">
-		<img src="images/Nail_polish_1.png"  alt="nail polish animation " class="nailPolish slb">
-		<img src="images/Nail_Polish_2.png"  alt="mascara animation" class="nailPolish2 slb">
-		<img src="images/Nail_Polish_3.png"  alt="mascara and nail polish" class="nailPolish3 slb">
+		<img src="images/Nail_polish_1.png"  alt="nail polish animation " class="nailPolish">
+		<img src="images/Nail_Polish_2.png"  alt="mascara animation" class="nailPolish2">
+		<img src="images/Nail_Polish_3.png"  alt="mascara and nail polish" class="nailPolish3">
 	</div>
-
+	<div class="lightbox hidden">
+		<div class="close">
+	<img src="images/Nail_polish_big1.png"  alt="nail polish animation " class="bigImage">
+	<img src="images/Nail_polish_big2.png"  alt="nail polish animation " class="bigImage">
+	<img src="images/Nail_polish_big3.png"  alt="nail polish animation " class="bigImage">
+</div>
+	</div>
 
 	<img src="images/readinggirl.svg" width="300px" height="300px" class="readinggirl" alt="">
 	<h1 class="readingText">Learning to code was a process,<br>
@@ -62,7 +88,7 @@ of HTML5, CSS3 + JAVASCRIPT <br></h1>
 <img src="images/akimalbuild.png" class="website1"alt="">
 <img src="images/SaturatedStudios.png" class="website2" alt="">
 <img src="images/graduatinggirl.svg" class="graduatingGirl" width="300px" height="300px"alt="">
-<h1 class="graduatingText">Once I graduate in 2018 i’ll be sufficient in:</h1>
+<h1 class="graduatingText">Once I graduate in 2018 i’ll be proficient in:</h1>
 <img src="images/html.svg" class="html"width="100px" height="100px" alt="">
 <img src="images/css.svg" class="css" alt=""width="100px" height="100px">
 <img src="images/javascript.svg" class="javascript" width="100px" height="100px"alt="">
@@ -77,19 +103,20 @@ of HTML5, CSS3 + JAVASCRIPT <br></h1>
 <img src="images/artshowgirl.svg" class="artGirl" width="300px" height="300px"alt="">
 <img src="images/DOTH.png" class="doth" alt="">
 <video src="images/Soccervideo.mp4" class="soccervideo" controls></video>
+<video src="images/SilverWolfWineVideo.mp4" class="Silvervideo" controls></video>
+<video src = "images / silverwolf video "
 
 <div class="spacer"></div>
 <h1 class="contactMe">CONTACT ME! </h1>
-		<form action="Thankyou.php" method="post">
+		<form action="index.php" method="post">
 		<!--Make sure to give each input a name attribute(name="")-->
-		<label class="name">Name: </label><input class="name" type="text" size="21" maxlength="30" /><br>
-		<label class="email">Email: </label><input class="email" type="text" size="21" maxlength="30" /><br>
+		<label class="name">Name: </label><input class="name" type="text" size="21" maxlength="30" name="name"/><br>
+		<label class="email">Email: </label><input class="email" type="text" size="21" maxlength="30" name="email"/><br>
 		<label for="street" class="street">Street: </label><input class="street" name="street" type="text" size="21" maxlength="30" /><br>
 		<label for="message" class="message">Message: </label><textarea name="message"></textarea>
-		<input class="submit" type="submit" value="Send" class="submit"/>
+		<input class="submit" type="submit" value="Send" name="submit"/>
 		</form>
 
-<meta name="viewport" content="width=device-width" />
 		</div>
 
 <script src="js/main.js"></script>

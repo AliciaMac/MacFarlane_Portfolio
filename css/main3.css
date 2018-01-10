@@ -451,6 +451,10 @@ img.laptopGirl/*this is the image with the girl and the laptop*/
 	border: #000000 1px solid;
 }
 /* end of section with the girl and the laptop*/
+/* lightbox css*/
+.hidden{
+	display: none;
+}
 /* start of girl studying section*/
 .readinggirl{
 	position: absolute;
@@ -574,19 +578,26 @@ img.laptopGirl/*this is the image with the girl and the laptop*/
 	width: 800px;
 	height: 450px;
 }
+.Silvervideo{
+	position: absolute;
+	top: 820%;
+	left: 18%;
+	width: 800px;
+	height: 450px;
+}
 /*start of contact form*/
 .contactMe{
 	font-family: 'Neucha', cursive;
 	font-size: 50px;
 	color: #8b5fae;
 	position: absolute;
-	top: 815%;
+	top: 910%;
 	left: 38%;
 }
 
 form{
 	position: absolute;
-	top: 830%;
+	top: 930%;
 	left: 25%;
   border: solid 1px #000000;
   width: 600px;
@@ -739,11 +750,11 @@ display: none;
 }
 .contactMe{
 	text-align: center;
-	top: 595%;
+	top: 615%;
 	left: 18%;
 }
 form{
-	top: 610%;
+	top: 630%;
 	width: 440px;
   border: solid 1px #000000;
 	left:0%;
@@ -977,6 +988,13 @@ img.laptopGirl{
 	width: 300px;
 	height: 169px;
 }
+.Silvervideo{
+	position: absolute;
+	top: 585%;
+	left: 18%;
+	width: 300px;
+	height: 169px;
+}
 }
 /*end of small media query*/
 /*this is the media query for tablet*/
@@ -1136,6 +1154,9 @@ font-size: 35px !important;
 }
 .soccervideo{
 	left: 10%;
+}
+.Silvervideo{
+	left: 10%
 }
 .form{
 	left: 20% !important;
