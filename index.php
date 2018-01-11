@@ -26,7 +26,6 @@ $sendMail = submitMessage($name, $email, $message, $direct);
 	<link rel="stylesheet" href="css/main3.css">
 	<link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Neucha" rel="stylesheet">
-	<link rel="stylesheet" href="css/simplebox.min.css">
 </head>
 <body>
 <div class="container">
@@ -67,12 +66,14 @@ $sendMail = submitMessage($name, $email, $message, $direct);
 	</div>
 
 
-	<div="ThreeD">
-		<img src="images/Nail_polish_1.png"  alt="nail polish animation " class="nailPolish">
-		<img src="images/Nail_Polish_2.png"  alt="mascara animation" class="nailPolish2">
-		<img src="images/Nail_Polish_3.png"  alt="mascara and nail polish" class="nailPolish3">
+	<div class="ThreeD">
+		<img src="images/Nail_polish_1.png" id="1" alt="nail polish animation " class="lightboxThumb nailPolish">
+		<img src="images/Nail_Polish_2.png" id="2" alt="mascara animation" class="lightboxThumb nailPolish2">
+		<img src="images/Nail_Polish_3.png" id="3" alt="mascara and nail polish" class="lightboxThumb nailPolish3">
 	</div>
-
+	<div class="lightbox hidden" id="">
+		<img class="lightboxImg" src="" alt="image">
+	</div>
 
 	<img src="images/readinggirl.svg" width="300px" height="300px" class="readinggirl" alt="">
 	<h1 class="readingText">Learning to code was a process,<br>
@@ -98,7 +99,6 @@ of HTML5, CSS3 + JAVASCRIPT <br></h1>
 <img src="images/DOTH.png" class="doth" alt="">
 <video src="images/Soccervideo.mp4" class="soccervideo" controls></video>
 <video src="images/SilverWolfWineVideo.mp4" class="Silvervideo" controls></video>
-<video src = "images / silverwolf video "
 
 <div class="spacer"></div>
 <h1 class="contactMe">CONTACT ME! </h1>
